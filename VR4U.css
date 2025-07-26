@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.section1,
+.section2 {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.left h2 {
+  font-size: 24px;
+  color: #1a1a7b;
+}
+
+.left .highlight {
+  color: #d63031;
+}
+
+.left p {
+  margin: 15px 0;
+}
+
+.features li {
+  margin: 10px 0;
+  font-weight: bold;
+  list-style: none;
+}
+
+.center {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  margin-left: 60px;
+}
+
+.center img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.dots{
+  display: flex;
+  width: 60px;
+height: 60px;
+position: absolute;
+right: 360px;
+    top: 133px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 50px;
+ right:270px;
+  background: linear-gradient(to right,#1a1a7b,#424295);
+  color: white;
+  padding: 5px 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+ border: 10px solid aliceblue;
+}
+
+.experience span {
+  font-size: 12px;
+  /* display: block; */
+  display: flex;
+  flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+
+.right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.service {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #1a1a7b;
+  display: flex;
+align-items: center;
+}
+
+.service span{
+  color: #1a1a7b;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.content2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+ max-width: 100%;
+    margin: 0;
+}
+
+.left2 img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.right2 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.right2 h2 {
+  color: #d63031;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+  text-align: center;
+  /* font-size: 14px; */
+}
+
+.card:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.card h4 {
+  color: #1a1a7b;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+ margin-top: 40px;
+    padding: 16px 400px;
+  background: #d63031;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background: #c0392b;
+}

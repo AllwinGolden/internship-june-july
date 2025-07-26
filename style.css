@@ -1,0 +1,77 @@
+/* CSS */
+.graphic-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.left-content,
+.right-content {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.sub-images {
+  display: flex;
+  gap: 10px;
+}
+
+.sub-images img {
+  width: 48%;
+  border-radius: 10px;
+}
+
+.title-bold {
+  font-weight: 700;
+  color: #1e2b7a;
+}
+
+.title-highlight {
+  color: orange;
+  font-weight: 700;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #ffc107;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Responsive: Stack layout on small screens */
+@media (max-width: 768px) {
+  .graphic-section {
+    flex-direction: column;
+  }
+
+  .left-content,
+  .right-content {
+    flex: 1 1 100%;
+  }
+
+  .sub-images {
+    flex-direction: column;
+  }
+
+  .sub-images img {
+    width: 100%;
+  }
+}

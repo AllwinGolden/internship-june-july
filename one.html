@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .menu-container {
+      position: relative;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+      background-color: #f0d9a9;
+      border-radius: 5px;
+      display: none; /* Hidden by default */
+    }
+
+    #menu-items {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      background-color: #f0d9a9;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #menu-items.hidden {
+      display: none;
+    }
+
+    #menu-items a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block; /* Show icon on small screens */
+      }
+
+      #menu-items {
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #f0d9a9;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div id="menu-items">
+      <a href="#">Website Development</a>
+      <a href="#">Digital Marketing</a>
+      <a href="#">Graphic Design</a>
+      <a href="#">Book Publish</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu-items");
+      menu.classList.toggle("hidden");
+    }
+
+    // Optional: auto-show menu on large screen resize
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        document.getElementById("menu-items").classList.remove("hidden");
+      }
+    });
+  </script>
+</body>
+</html>
+
+
